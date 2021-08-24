@@ -14,8 +14,8 @@
             "kind": "Scheduled",
             "apiVersion": "2021-03-01-preview",
             "properties": {
-                "displayName": "Valid Analytic Rule 1",
-                "description": "DESCRIPTION CHECK",
+                "displayName": "Valid Analytic Rule 1 updated",
+                "description": "updated description",
                 "severity": "High",
                 "enabled": true,
                 "query": "SecurityAlert",

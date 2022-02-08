@@ -1,6 +1,11 @@
-{
-    "contentVersion":  "1.0.0.0",
+{  
     "$schema":  "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+	"contentVersion":  "1.0.0.0",
+    "parameters":  {
+        "workspace":  {
+            "type":  "String"
+        }
+    }
     "resources":  [
         {
             "id":  "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/0b85a077-8ba5-4cb5-90f7-1e882afe10c4')]",
@@ -41,10 +46,5 @@
                 "lastModifiedUtc":  "2022-02-06T13:41:35.7546485Z"
             }
         }
-    ],
-    "parameters":  {
-        "workspace":  {
-            "type":  "String"
-        }
-    }
+    ]
 }

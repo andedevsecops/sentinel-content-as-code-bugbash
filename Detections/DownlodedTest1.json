@@ -12,6 +12,7 @@
             "name":  "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/0b85a077-8ba5-4cb5-90f7-1e882afe10c4')]",
             "type":  "Microsoft.OperationalInsights/workspaces/providers/alertRules",
             "kind":  "Scheduled",
+	     "apiVersion": "2021-09-01-preview",
             "properties":  {
                 "incidentConfiguration":  {
                     "createIncident":  true,
